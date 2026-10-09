@@ -35,7 +35,7 @@
         <label for="lb2">Prenom:</label>
         <input type="text" name="prenom" id="lb2" minlength="2"><br>
         <label for="lb3">Adresse électronique:</label>
-        <input type="email" name="email" id="lb3"><br>
+        <input type="url" name="site" id="site"><br>
         <p><label for="lb4">Telephone:</label>
         <input type="tel" name="tel" id="lb4" pattern="\+216[0-9]{8}"  required placeholder="+21622550211" title="+216"><br></p>
         <label for="lb5">Code postal</label>
@@ -53,40 +53,50 @@
     </form>
         </fieldset>
         <fieldset>
+            <fieldset>
             <legend>votre gàteau</legend>
             <label for="e1">Occasion:</label>
             <input type="radio" name="r" id="r1" required>Anniversaire
             <input type="radio" name="r" id="r2" required>Marriage
             <input type="radio" name="r" id="r3" required>Finacailles
-            <input type="radio" name="r" id="r4"  required>Autres <br>
-
-            <label for="">Date de retrait</label>
-       <input type="date" name="" id="date" required><br>
+            <input type="radio" name="r" id="r4"  required>Autres <br><br>
+</fieldset>
+            <label for="">Date de retrait:</label><input type="date" name="" id="date" required><br><br>
+    <label for="heure_re">Heure de retrait souhaitée :</label>
+    <input type="time" name="heure_re" id="heure_re"><br><br>
        <label for="">Nombre de parts</label>
-       <input type="number" name="nbr" id="nbr" min="6" max="100" step="2" value="12"><br>
+       <input type="number" name="nbr" id="nbr" min="6" max="100" step="2" value="12"><br><br>
        <label for="">parfums souhaités:</label>
 
        <input type="checkbox" name="parfums[]" id="cb1">chocolat 
        <input type="checkbox" name="parfums[]" id="cb2">Vanille 
        <input type="checkbox" name="parfums[]" id="cb3">Pistache 
        <input type="checkbox" name="parfums[]" id="cb4">Fruits 
-       <input type="checkbox" name="parfums[]" id="cb6">Autres <br>
+       <input type="checkbox" name="parfums[]" id="cb6">Autres <br><br>
        <label for="">Niveau de sucre:</label>
-       <input type="range" step="1" value="5" min="0" max="10" name="range" id="Nc" name="Nc"><br>
+       <input type="range" step="1" value="5" min="0" max="10" name="range" id="Nc" name="Nc"><br><br>
        <label for="">Couleur du glace:</label>
-       <input type="color" value="#c8912a" id="couleur" name="couleur"><br>
+       <input type="color" value="#c8912a" id="couleur" name="couleur"><br><br>
        <label for="">Message sur le Gateau:</label>
-       <input type="text" name="mess" id="mess" max="30"><br>
+       <input type="text" name="mess" id="mess" maxlength="30"><br><br>
        <label for="">Photo de modéle</label>
-       <input type="file" id="im" accept="image"><br>
+       <input type="file" id="im" accept="image"><br><br>
        <select multiple size="4" name="decors[]" id="decors">
+       <optgroup label="décors sucrés">
         <option value="0">Fleurs en pate à sucre</option>
         <option value="1">Fruits Frais</option>
         <option value="2">Motifs en chocolat </option>
         <option value="3">Feuilles d'or comistibles</option>
-        <label for="">précision</label>
+       </optgroup>
+        <optgroup label="Décors frais">
+            <option value="fruitsR">Fruits rouges</option>
+            <option value="citron">Citron</option>
+            <option value="menthe">Menthe fraîche</option>
+        </optgroup>
+    </select><br>
+    <label for="">précision:</label><br>
         <textarea name="pre" id="pre" cols="40" rows="4"></textarea>
-       </select>
+
         </fieldset>
         <fieldset>
             <legend>confirmation</legend>
@@ -94,14 +104,20 @@
         <button type="submit">Envoyer ma commande</button><br>
         <button type="reset">Tout effacer</button></p>
         </fieldset>
-       
-
-
     </MAIN>
 <footer>
-    Dar El Halwa 2026
-    <a href="https://www.facebook.com/darelhalwa">facebook</a>
-    <a href="https://www.instagram.com/darelhalwa">instagram</a>
+    <h2>Contact</h2>
+
+        <ol type="1"> 
+            <li>l'adresse (Route de Tunis km 5, Sfax 3044,tunisie)</li>
+            <li><a href="mailto:contact@darelhalwa.tn">contactez nous dar el halwa</li></a>
+            <li>le numero téléphone:<a href="tel:+21674000000"> +216 74 000 000.</li></a>
+
+        </ol>
+   <p> Dar El Halwa 2026</p>
+   <p>suivez-nous:</p>
+    <a href="https://www.facebook.com/darelhalwa">facebook</a><br>
+    <a href="https://www.instagram.com/darelhalwa">instagram</a><br>
     <a href="https://www.linkedin.com/company/darelhalwa">linkedin</a>
 </footer>
 
