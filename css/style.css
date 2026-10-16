@@ -9,6 +9,7 @@ p{
 --chocolat: #4a2c1a;
 --creme: #fff8ef;
 --espace: 1rem;
+--police-titre:Arial, Helvetica, sans-serif;
 }
 body{
 background-color:rgb(225, 215, 209);
@@ -18,9 +19,11 @@ color:var(--chocolat);
  h2{
     color: var(--chocolat);
     border-bottom: 2px var(--miel);
+    font-family: var(--police-titre);
+
  }
  nav a{
-    text-align: none;
+    text-align: center;
     color: var(--chocolat);
     font-weight: bold;
  }
@@ -62,12 +65,11 @@ main p { color: blue;
 }
 .mise-en-avant { color: rgb(78, 17, 17); }
 .carte-info{
-    width: 400px;
-    padding: 20px;
+    width: 25rem;
+    padding: 1.25rem;
     border: 2px;
     border-color: var(--miel);
-    margin: 30px;
-
+    margin: 1.9rem;
 }
 table { border-collapse: collapse; width: 100%; }
 thead { background-color:#a47621;}
@@ -75,3 +77,16 @@ th, td { border:1px gray solid;}
 tbody tr td:last-child{ text-align:right;}
 tbody tr:nth-child(even){ background-color: #dacbb4; }
 caption { caption-side: bottom; font-style: italic; }
+.retour{
+    display:inline-block;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 40px;
+    border-radius:50%;
+    height: 4rem;
+    width: 4rem;
+    font-style: italic;
+    text-align: center;
+    align-content: center;
+}
