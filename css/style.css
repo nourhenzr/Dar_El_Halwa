@@ -150,5 +150,5 @@ img, video { max-width: 100%; height: auto; }
 footer { flex-direction: row; }
 }
 @media (min-width: 1024px) {
-.grille-produits { grid-template-columns: repeat(3, 1fr); }
+.grille-produits { grid-template-columns: auto-fit,minmax(220px,1fr); }
 }
